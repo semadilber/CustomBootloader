@@ -1,0 +1,34 @@
+# Build outputs
+Debug/
+Release/
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# Object files
+*.o
+*.d
+*.su
+*.cyclo
+
+# IDE files
+.vscode/
+.idea/
+*.launch
+.settings/
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# STM32CubeIDE specific
+.metadata/
+*.ioc.bak 
