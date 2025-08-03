@@ -206,3 +206,7 @@ Bootloader/
 - No encryption implemented (add for production use)
 - Consider implementing digital signatures for firmware validation
 - Bootloader sectors should be write-protected in production
+
+⚠️ Important Note:
+The user-provided firmware must be linked correctly to match the target flash sector. This means the .ld (linker script) file must define the starting flash address according to the specific sector where the bootloader is designed to write the firmware.
+If this address is incorrect, the uploaded firmware may overwrite unintended memory regions or fail to run properly after flashing.
