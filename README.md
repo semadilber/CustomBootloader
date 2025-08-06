@@ -207,6 +207,11 @@ Bootloader/
 - Consider implementing digital signatures for firmware validation
 - Bootloader sectors should be write-protected in production
 
+## Integration with FirmwareUploaderApp
+
+- This bootloader is fully compatible with the custom desktop GUI tool:
+🔗 https://github.com/semadilber/FirmwareUploaderApp
+
 ⚠️ Important Note:
 The user-provided firmware must be linked correctly to match the target flash sector. This means the .ld (linker script) file must define the starting flash address according to the specific sector where the bootloader is designed to write the firmware.
 If this address is incorrect, the uploaded firmware may overwrite unintended memory regions or fail to run properly after flashing.
